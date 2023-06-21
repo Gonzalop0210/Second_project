@@ -92,3 +92,34 @@ body {
 .empresa {
     font-weight: lighter;
 }
+
+@media (min-width: 600px) {
+    body {
+        padding: 0px 300px 20px 300px;
+    }
+
+    .page_top {
+        display: flex;
+    }
+
+    .title, .container_child {
+        flex: 1;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .main {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .container_parent_team:nth-child(2), .container_parent_team:nth-child(4), .container_parent_team:nth-child(6) {
+        margin-top: 0;
+    }
+
+    .container_parent_team:nth-child(2), .container_parent_team:nth-child(5) {
+        margin-top: 50px;
+    }
+}
